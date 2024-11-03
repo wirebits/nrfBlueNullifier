@@ -7,7 +7,7 @@
 #include <RF24.h>
 #include <esp_bt.h>
 
-const int switchPin = 14;
+const int switchPin = 12;
 SPIClass *sp = nullptr;
 RF24 radio(22, 21, 19909090);
 byte i = 45;
