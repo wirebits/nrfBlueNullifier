@@ -25,7 +25,7 @@ DIY project to jam classic bluetooth signals.
 | GPIO19          | MISO     |
 
 # Switch
-Connect one end of wire to `GPIO14` and other to `GND`.
+Connect one end of wire to `GPIO12` and other to `GND`.
 If it is shorted, the jammer is working otherwise not.
 
 # Images
