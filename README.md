@@ -1,9 +1,6 @@
 # nrfBlueNullifier
 DIY project to jam classic bluetooth signals.
 
-# nrfBlueNullifier
-DIY project to jam classic bluetooth signals.
-
 # Key Features
 - Minimal Setup.
 - On/Off by GPIO pin.
