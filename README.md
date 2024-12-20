@@ -1,3 +1,5 @@
+![nrfBlueNullifier](https://github.com/user-attachments/assets/88434037-27e6-4874-9e59-be4a89456f3f)
+
 # nrfBlueNullifier
 DIY project to jam classic bluetooth signals.
 
@@ -8,7 +10,7 @@ DIY project to jam classic bluetooth signals.
 # Hardware Requirements
 - NodeMCU ESP-32S V1.1
 - One nrf24L01 Module OR nrf24L01+PA/LNA Module
-- `9` Female to Female Jumper Wires
+- `8` Female to Female Jumper Wires
 
 # Pinout
 | NODEMCU ESP-32S | nrf24l01 |
