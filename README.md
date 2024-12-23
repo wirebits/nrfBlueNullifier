@@ -1,7 +1,7 @@
 ![nrfBlueNullifier](https://github.com/user-attachments/assets/88434037-27e6-4874-9e59-be4a89456f3f)
 
 # nrfBlueNullifier
-DIY project to jam classic bluetooth signals.
+A tool which jam classic bluetooth signals.
 
 # Key Features
 - Minimal Setup.
