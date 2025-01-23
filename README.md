@@ -8,7 +8,7 @@ A tool which jam classic bluetooth signals.
 - On/Off by GPIO pin.
 
 # Hardware Requirements
-- NodeMCU ESP-32S V1.1
+- NodeMCU ESP-32S V1.1 38-Pins
 - One nrf24L01 Module OR nrf24L01+PA/LNA Module
 - `8` Female to Female Jumper Wires
 
@@ -61,4 +61,8 @@ If it is shorted, the jammer is working otherwise not.
 9. When show `Writing at ` then release the `BOOT` button.
 10. Done!
    - The script starts running automatically.
-   - It breaks the sound, block the sound even the device playing the music and after sometimes it disconnects the bluetoth from the device.
+
+# What happened after script is running?
+- It breaks the sound.
+- It block the sound even the device playing the music.
+- Sometimes it disconnects the bluetoth from the device.
