@@ -12,7 +12,10 @@ A tool which jam classic bluetooth signals.
 - One nrf24L01 Module OR nrf24L01+PA/LNA Module
 - `8` Female to Female Jumper Wires
 
-# Pinout
+# Note
+- nrf24L01 and nrf24L01+PA/LNA modules have same pinout.
+
+# Pinout Table
 | NODEMCU ESP-32S | nrf24l01 |
 |-----------------|----------|
 | 3.3V            | VCC      |
@@ -23,9 +26,12 @@ A tool which jam classic bluetooth signals.
 | GPIO23          | MOSI     |
 | GPIO19          | MISO     |
 
+# Connection Diagram
+![ESP32 38-Pins with nrf24L01](https://github.com/user-attachments/assets/8066151b-2e73-4e15-accc-a7685f9a41d0)
+
 # Switch
-Connect one end of wire to `GPIO12` and other to `GND`.
-If it is shorted, the jammer is working otherwise not.
+- Connect one end of wire to `GPIO12` and other to `GND`.
+- If it is shorted, the jammer is working otherwise not.
 
 # Images
 ![NodeMCU ESP-32S](https://github.com/user-attachments/assets/b790a39f-dae6-4087-a740-148f6b272aa4)
@@ -45,8 +51,12 @@ If it is shorted, the jammer is working otherwise not.
 7. Wait for sometimes and search `esp32` by `Espressif Systems`.
 8. Simply install it.
 9. Wait for sometime and after that it is installed.
-10. Restart the Arduino IDE.
-11. Done!
+10. Go to `Sketch` → `Include Library` → `Manage Libraries`.
+11. Wait for sometimes and search `rf24` by `TMRh20, Avamander`.
+12. Simply install it.
+13. Wait for sometime and after that it is installed.
+14. Restart the Arduino IDE by closing and open again.
+15. Done!
 
 # Install
 1. Download or Clone the Repository.
@@ -64,5 +74,5 @@ If it is shorted, the jammer is working otherwise not.
 
 # What happened after script is running?
 - It breaks the sound.
-- It block the sound even the device playing the music.
+- It blocks the sound even the device playing the music.
 - Sometimes it disconnects the bluetoth from the device.
