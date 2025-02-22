@@ -8,7 +8,6 @@
 #include <esp_bt.h>
 #include <esp_bt_main.h>
 
-const int switchPin = 12;
 SPIClass *sp = nullptr;
 RF24 radio(22, 21, 19909090);
 byte i = 45, ptr_hop = 0, flag = 0;
@@ -37,7 +36,6 @@ void adjustAndSweepChannels() {
 }
 
 void setup() {
-    pinMode(switchPin, INPUT_PULLUP);
     esp_bt_controller_deinit();
     if (esp_bluedroid_get_status() == ESP_BLUEDROID_STATUS_ENABLED) {
         esp_bluedroid_disable();
@@ -47,9 +45,7 @@ void setup() {
 }
 
 void loop() {
-    if (!digitalRead(switchPin)) {
         adjustAndSweepChannels();
         ptr_hop = (ptr_hop + 1) % sizeof(hopping_channel);
         radio.setChannel(hopping_channel[ptr_hop]);
-    }
 }
