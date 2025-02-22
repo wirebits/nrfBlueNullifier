@@ -5,12 +5,11 @@ A tool which jam classic bluetooth signals.
 
 # Key Features
 - Minimal Setup.
-- On/Off by GPIO pin.
 
 # Hardware Requirements
 - NodeMCU ESP-32S V1.1 38-Pins
 - One nrf24L01 Module OR nrf24L01+PA/LNA Module
-- `8` Female to Female Jumper Wires
+- `7` Female to Female Jumper Wires
 
 # Note
 - nrf24L01 and nrf24L01+PA/LNA modules have same pinout.
@@ -28,10 +27,6 @@ A tool which jam classic bluetooth signals.
 
 # Connection Diagram
 ![ESP32 38-Pins with nrf24L01](https://github.com/user-attachments/assets/8066151b-2e73-4e15-accc-a7685f9a41d0)
-
-# Switch
-- Connect one end of wire to `GPIO12` and other to `GND`.
-- If it is shorted, the jammer is working otherwise not.
 
 # Images
 ![NodeMCU ESP-32S](https://github.com/user-attachments/assets/b790a39f-dae6-4087-a740-148f6b272aa4)
