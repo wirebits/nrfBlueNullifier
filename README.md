@@ -71,3 +71,16 @@ A tool which jam classic bluetooth signals.
 - It breaks the sound.
 - It blocks the sound even the device playing the music.
 - Sometimes it disconnects the bluetoth from the device.
+
+# Modification In Code
+- The code effects on classic bluetooth and wifi.
+- If want to put most of the effect on classic bluetooth only, modify the code by replacing the code in line 14 by following :
+```
+byte hopping_channel[] = {32, 34, 46, 48, 50, 52, 26, 28, 30, 74, 76, 78};
+```
+- Save the code.
+- Compile the code and then upload it.
+
+# What happened after modified script is running?
+- It blocks the sound even the device playing the music.
+- It slow down the speed of the wifi.
