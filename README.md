@@ -25,9 +25,6 @@ A tool which jam classic bluetooth signals.
 | GPIO23          | MOSI     |
 | GPIO19          | MISO     |
 
-# Connection Diagram
-![ESP32 38-Pins with nrf24L01](https://github.com/user-attachments/assets/8066151b-2e73-4e15-accc-a7685f9a41d0)
-
 # Images
 ![NodeMCU ESP-32S](https://github.com/user-attachments/assets/b790a39f-dae6-4087-a740-148f6b272aa4)
 ![nrf24L01](https://github.com/user-attachments/assets/706db436-8ce3-431d-8b0e-51e8936e28ff)
