@@ -1,4 +1,4 @@
-![nrfBlueNullifier](https://github.com/user-attachments/assets/88434037-27e6-4874-9e59-be4a89456f3f)
+<img width="1024" height="1024" alt="nrfBlueNullifier" src="https://github.com/user-attachments/assets/5fa6548b-a4e1-41a5-904e-4f024bfe2050" />
 
 # nrfBlueNullifier
 A tool which jam classic bluetooth signals.
