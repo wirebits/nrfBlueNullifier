@@ -7,7 +7,7 @@ A tool which jam classic bluetooth signals.
 - Minimal Setup.
 
 # Hardware Requirements
-- NodeMCU ESP-32S V1.1 38-Pins
+- NodeMCU ESP8266
 - One nrf24L01 Module OR nrf24L01+PA/LNA Module
 - `7` Female to Female Jumper Wires
 
