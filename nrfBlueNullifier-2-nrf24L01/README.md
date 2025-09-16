@@ -1,21 +1,27 @@
-<img width="1024" height="1024" alt="nrfBlueNullifier" src="https://github.com/user-attachments/assets/5fa6548b-a4e1-41a5-904e-4f024bfe2050" />
+# 🛜nrfBlueNullifier
+A tool which jam classic bluetooth signals using 2 nrf24L01 modules.
 
-# nrfBlueNullifier
-A tool which jam classic bluetooth signals.
-
-# Key Features
-- Minimal Setup.
-
-# Hardware Requirements
-- NodeMCU ESP-32S V1.1 38-Pins
+# 📦Requirements
+- NodeMCU ESP-32S 38-Pins
 - One nrf24L01 Module OR nrf24L01+PA/LNA Module
 - `7` Female to Female Jumper Wires
 
-# Note
+# 🗒️Note
 - nrf24L01 and nrf24L01+PA/LNA modules have same pinout.
 
-# Pinout Table
-| NODEMCU ESP-32S | nrf24l01 |
+# 🔌Pinout Table
+## HSPI
+| NODEMCU ESP32S | nrf24L01 |
+|----------------|----------|
+| 3.3V           | VCC      |
+| GND            | GND      |
+| GPIO16         | CE       |
+| GPIO15         | CSN      |
+| GPIO14         | SCK      |
+| GPIO13         | MOSI     |
+| GPIO12         | MISO     |
+## VSPI
+| NODEMCU ESP32S  | nrf24l01 |
 |-----------------|----------|
 | 3.3V            | VCC      |
 | GND             | GND      |
@@ -25,16 +31,15 @@ A tool which jam classic bluetooth signals.
 | GPIO23          | MOSI     |
 | GPIO19          | MISO     |
 
-# Images
+# 🖼️Images
 ![NodeMCU ESP-32S](https://github.com/user-attachments/assets/b790a39f-dae6-4087-a740-148f6b272aa4)
 ![nrf24L01](https://github.com/user-attachments/assets/706db436-8ce3-431d-8b0e-51e8936e28ff)
 
-# Setup
+# ⚙️Setup
 1. Download Arduino IDE from [here](https://www.arduino.cc/en/software) according to your Operating System.
 2. Install it.
 3. Go to `File` → `Preferences` → `Additional Boards Manager URLs`.
 4. Paste the following link :
-   
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
@@ -50,7 +55,7 @@ A tool which jam classic bluetooth signals.
 14. Restart the Arduino IDE by closing and open again.
 15. Done!
 
-# Install
+# 🔧Install
 1. Download or Clone the Repository.
 2. Open the folder and just double click on `nrfBlueNullifier.ino` file.
 3. It opens in Arduino IDE.
@@ -64,20 +69,8 @@ A tool which jam classic bluetooth signals.
 10. Done!
    - The script starts running automatically.
 
-# What happened after script is running?
+# 🤔What happened after script is running?
 - It breaks the sound.
 - It blocks the sound even the device playing the music.
 - Sometimes it disconnects the bluetoth from the device.
-
-# Modification In Code
-- The code effects on classic bluetooth and wifi.
-- If want to put most of the effect on classic bluetooth only, modify the code by replacing the code in line 14 by following :
-```
-byte hopping_channel[] = {32, 34, 46, 48, 50, 52, 26, 28, 30, 74, 76, 78};
-```
-- Save the code.
-- Compile the code and then upload it.
-
-# What happened after modified script is running?
-- It blocks the sound even the device playing the music.
-- It slow down the speed of the wifi.
+- It slow down the speed of the wifi and sometimes it disconnects.
