@@ -1,6 +1,6 @@
 /*
  * nrfBlueNullifier
- * DIY project to jam classic bluetooth signals using 1 nrf24L01 module at HSPI.
+ * A tool which jam classic bluetooth signals using 1 nrf24L01+PA/LNA module at HSPI.
  * Author - WireBits
  */
 
