@@ -1,6 +1,6 @@
 /*
  * nrfBlueNullifier
- * DIY project to jam classic bluetooth signals using 2 nrf24L01+PA/LNA modules.
+ * DIY project to jam classic bluetooth signals using 2 nrf24L01 modules.
  * Author - WireBits
  */
 
@@ -83,4 +83,5 @@ void setup() {
 void loop() {
   channelSweeper();
   randomChannel();
+
 }
