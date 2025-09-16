@@ -1,20 +1,20 @@
 <img width="1024" height="1024" alt="nrfBlueNullifier" src="https://github.com/user-attachments/assets/5fa6548b-a4e1-41a5-904e-4f024bfe2050" />
 
-# nrfBlueNullifier
+# 🛜nrfBlueNullifier
 A tool which jam classic bluetooth signals.
 
-# Key Features
+# ✨Key Features
 - Minimal Setup.
 
-# Hardware Requirements
+# 📦Requirements
 - NodeMCU ESP-32S V1.1 38-Pins
 - One nrf24L01 Module OR nrf24L01+PA/LNA Module
 - `7` Female to Female Jumper Wires
 
-# Note
+# 🗒️Note
 - nrf24L01 and nrf24L01+PA/LNA modules have same pinout.
 
-# Pinout Table
+# 🔌Pinout Table
 | NODEMCU ESP-32S | nrf24l01 |
 |-----------------|----------|
 | 3.3V            | VCC      |
