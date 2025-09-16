@@ -1,5 +1,5 @@
 # 🛜nrfBlueNullifier
-A tool which jam classic bluetooth signals using 1 nrf24L01+PA/LNA module at VSPI.
+A tool which jam classic bluetooth signals using 1 nrf24L01 module at HSPI.
 
 # 📦Requirements
 - NodeMCU ESP-32S 38-Pins
@@ -10,15 +10,15 @@ A tool which jam classic bluetooth signals using 1 nrf24L01+PA/LNA module at VSP
 - nrf24L01 and nrf24L01+PA/LNA modules have same pinout.
 
 # 🔌Pinout Table
-| NODEMCU ESP-32S | nrf24l01 |
-|-----------------|----------|
-| 3.3V            | VCC      |
-| GND             | GND      |
-| GPIO22          | CE       |
-| GPIO21          | CSN      |
-| GPIO18          | SCK      |
-| GPIO23          | MOSI     |
-| GPIO19          | MISO     |
+| NODEMCU ESP32S | nrf24L01 |
+|----------------|----------|
+| 3.3V           | VCC      |
+| GND            | GND      |
+| GPIO16         | CE       |
+| GPIO15         | CSN      |
+| GPIO14         | SCK      |
+| GPIO13         | MOSI     |
+| GPIO12         | MISO     |
 
 # 🖼️Images
 ![NodeMCU ESP-32S](https://github.com/user-attachments/assets/b790a39f-dae6-4087-a740-148f6b272aa4)
