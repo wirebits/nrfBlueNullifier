@@ -58,6 +58,31 @@ A tool which jam classic bluetooth signals using 1 nrf24L01 module at HSPI.
 10. Done!
    - The script starts running automatically.
 
+# 🔧Install using ESP Web Flasher
+1. Open Adafruit ESP Web Flasher from [here](https://adafruit.github.io/Adafruit_WebSerial_ESPTool/).
+2. Set the Baud Rate to `115200 Baud`.
+3. Connect `ESP32` with a USB cable and then to the PC/Laptop.
+4. Press and hold the `BOOT` button.
+5. Click on `Connect` button.
+6. Select your Device COM Port in the Pop-Up Window.
+7. Release the `BOOT` button.
+   - When connected successfully, then it show this <img width="386" height="217" alt="Adafruit ESP Web Flasher" src="https://github.com/user-attachments/assets/47b8888e-25d2-4a29-ab6d-25055cf3a033" />
+8. Click on `Erase` button.
+   - Wait for sometimes to successfully erased.
+9. Download `3` files from this directory.
+    - The files are :
+      1. `nrfBlueNullifier-HSPI-nrf24L01-bootloader.bin`
+      2. `nrfBlueNullifier-HSPI-nrf24L01-partitions.bin`
+      3. `nrfBlueNullifier-HSPI-nrf24L01.bin`
+10. Select `nrfBlueNullifier-HSPI-nrf24L01-bootloader.bin` file with offset `0x1000`.
+11. Select `nrfBlueNullifier-HSPI-nrf24L01-partitions.bin` file with offset `0x8000`.
+12. Select `nrfBlueNullifier-HSPI-nrf24L01.bin` file with offset `0x10000`.
+13. Click on `Program` button.
+    - Wait for sometimes to successfully programmed.
+14. Press and release the `BOOT` button.
+15. Unplug and plug the `ESP32` on the PC/Laptop.
+16. Done! `nrfBlueNullifier-HSPI-nrf24L01` is ready.
+
 # 🤔What happened after script is running?
 - It breaks the sound.
 - It blocks the sound even the device playing the music.
