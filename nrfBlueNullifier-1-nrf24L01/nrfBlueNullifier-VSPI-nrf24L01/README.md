@@ -77,12 +77,11 @@ A tool which jam classic bluetooth signals using 1 nrf24L01+PA/LNA module at VSP
 10. Select `nrfBlueNullifier-VSPI-nrf24L01-bootloader.bin` file with offset `0x1000`.
 11. Select `nrfBlueNullifier-VSPI-nrf24L01-partitions.bin` file with offset `0x8000`.
 12. Select `nrfBlueNullifier-VSPI-nrf24L01.bin` file with offset `0x10000`.
-13. Click on `Erase` button to clear previous codes.
-14. Click on `Program` button.
+13. Click on `Program` button.
     - Wait for sometimes to successfully programmed.
-15. Press and release the `BOOT` button.
-16. Unplug and plug the `ESP32` on the PC/Laptop.
-17. Done! `nrfBlueNullifier-VSPI-nrf24L01` is ready.
+14. Press and release the `BOOT` button.
+15. Unplug and plug the `ESP32` on the PC/Laptop.
+16. Done! `nrfBlueNullifier-VSPI-nrf24L01` is ready.
 
 # 🤔What happened after script is running?
 - It breaks the sound.
